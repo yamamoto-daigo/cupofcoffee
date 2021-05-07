@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cup of Coffee" content="静岡にあるコーヒー専門店">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/style.css">
+    <link rel="stylesheet" href="./public/reset.css">
+    <script src="https://kit.fontawesome.com/9b058b295a.js" crossorigin="anonymous"></script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'nrm6ihw',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <title>Cup of Coffee</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <!-- ロゴ -->
+        <h1 class="logo">
+            <a href="index.html">
+                <img class="logo" src="./img/logo.svg" alt="logo">
+            </a>
+        </h1>
+        <!-- ハンバーガーメニュー -->
+        <div class="drawer">
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
+            <!-- ハンバーガーメニューのアイコン -->
+            <label for="navToggle" class="btn-burger">
+                <span class="icon"></span>
+            </label>
+            <!-- 表示されるメニューの中身 -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="./public/about.html">ABOUT</a></li>
+                    <li><a href="./public/news.html">NEWS</a></li>
+                    <li><a href="./public/cafe.html">CAFE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="visual-area">
+        <img src="./img/key-visu.png" alt="key">
+        <h1>きっとあなたの<br>好きなコーヒーがここに</h1>
+    </div>
+    <article class="coffee-area">
+        <div class="title-wrapper">
+            <h2 class="title">COFFEE</h2><input class="pc-view" type="button" value="MORE" onclick="location.href='./public/cafe.html'">
+        </div>
+        <p class="additional">Cup of COFFEEでは、1杯1杯ハンドドリップでご用意します。<br>
+            産地ごと異なる味、香りの違いをお楽しみいただけます。</p>
+        <div class="coffee-flex">
+            <div class="coffee-content">
+                <img src="./img/black.png" alt="black">
+                <div class="reccomend">
+                    <p>おすすめの豆</p>
+                    <ul>
+                        <li>グアテマラ</li>
+                        <li>タイ</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="coffee-content"><img src="./img/latte1.png" alt="latte">
+                <div class="reccomend">
+                    <p>おすすめの豆</p>
+                    <ul>
+                        <li>エチオピア</li>
+                        <li>ケニア</li>
+                        <li>ジャマイカ</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="coffee-content"><img src="./img/espresso1.png" alt="espresso">
+                <div class="reccomend">
+                    <p>おすすめの豆</p>
+                    <ul>
+                        <li>グアテマラ</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <input class="mob-view" type="button" value="MORE">
+    </article>
+    <main>
+        <article class="news-area">
+            <div class="title-wrapper">
+                <h2 class="title">NEWS</h2><input class="pc-view" type="button" value="MORE"onclick="location.href='/public/news.html'">
+            </div>
+            <section class="news-flex"><img src="./img/coffee-how.png" alt="淹れ方">
+                <a href="#">
+                    <h3>淹れ方のこと</h3>
+                    <p><time>2021/04/04</time></p>
+                    <p>みなさん、コーヒー豆は、コーヒーチェリーと呼ばれる果
+                        実の種子を焙煎したものだということをご存知ですか？
+                        農園で育ったコーヒーチェリーは精製処理されたあと...</p>
+                </a>
+            </section>
+            <section class="news-flex"><img src="./img/coffee-tool.png" alt="道具">
+                <a href="#">
+                    <h3>道具のこと</h3>
+                    <p><time>2021/04/01</time></p>
+                    <p>みなさん、コーヒー豆は、コーヒーチェリーと呼ばれる果
+                        実の種子を焙煎したものだということをご存知ですか？
+                        農園で育ったコーヒーチェリーは精製処理されたあと...</p>
+                </a>
+            </section>
+            <section class="news-flex"><img src="./img/whats-coffee.png" alt="豆">
+                <a href="#">
+                    <h3>コーヒーのこと</h3>
+                    <p><time>2021/03/20</time></p>
+                    <p>みなさん、コーヒー豆は、コーヒーチェリーと呼ばれる果
+                        実の種子を焙煎したものだということをご存知ですか？
+                        農園で育ったコーヒーチェリーは精製処理されたあと...</p>
+                </a>
+            </section>
+            <input class="mob-view" type="button" value="MORE">
+        </article>
+    </main>
+        <article class="access-area">
+            <div class="title-wrapper">
+                <h2 class="title">ACCESS</h2>
+            </div>
+            <div class="access-flex">
+                <section>
+                    <h4>営業時間</h4>
+                    <p>平　日 8:00 - 20:00</p>
+                    <p>土　日 7:00 - 20:00</p>
+                    <p>〒422-0000</p>
+                    <p>静岡市葵区〇〇町100-1</p>
+                    <p>TEL 054-000-0000</p>
+                    <input type="button" value="Google Map">
+                </section>
+                <img src="./img/coffee-shop.png" alt="店舗外観">
+            </div>
+        </article>
+        <div class="sns-area">
+            <ul class="snsbtniti">
+                <li><a href="#" class="flowbtn10"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="flowbtn10"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" class="flowbtn10"><i class="fab fa-facebook"></i></a>
+            </ul>
+        </div>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="./public/about.html">ABOUT</a></li>
+                    <li><a href="./public/news.html">NEWS</a></li>
+                    <li><a href="./public/cafe.html">CAFE</a></li>
+                </ul>
+            </nav>
+            <div>
+                <small>Copyright ©︎ 2021 Cup of Coffee All rights reserved</small>
+            </div>
+        </footer>
+</body>
+
+</html>

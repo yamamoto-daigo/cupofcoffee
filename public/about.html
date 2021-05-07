@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cup of Coffee" content="静岡にあるコーヒー専門店">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://kit.fontawesome.com/9b058b295a.js" crossorigin="anonymous"></script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'nrm6ihw',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <title>Cup of Coffee</title>
+</head>
+
+<body id="about" class="body">
+    <header class="header">
+        <!-- ロゴ -->
+        <h1 class="logo">
+            <a href="../index.html">
+                <img class="logo" src="../img/logo.svg" alt="logo">
+            </a>
+        </h1>
+        <!-- ハンバーガーメニュー -->
+        <div class="drawer">
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
+            <!-- ハンバーガーメニューのアイコン -->
+            <label for="navToggle" class="btn-burger">
+                <span class="icon"></span>
+            </label>
+            <!-- 表示されるメニューの中身 -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="cafe.html">CAFE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="visual-area">
+        <img src="../img/about-img.jpg" alt="about-key">
+        <h1>あなたにとって最高のコーヒーを</h1>
+    </div>
+    <article class="pride-area">
+        <div class="title-wrapper">
+            <h2 class="title">PRIDE</h2>
+        </div>
+        <section class="pride-content">
+            <div class="pride-message">
+                <h2><span>01</span>10種類以上の豆を用意</h2>
+                <p>当店では常時10種類以上のコーヒー豆に加え、季節ごとのコーヒー豆を用意してます。</p>
+            </div>
+            <div class="pride-img"><img src="../img/pride1.jpg" alt="豆のこだわり"></div>
+        </section>
+        <section class="pride-content">
+            <div class="pride-message">
+                <h2><span>02</span>最高の状態で提供</h2>
+                <p>注文を受けてからコーヒーを
+                    淹れます、時間はかかりますが
+                    最高の状態で提供します。</p>
+            </div>
+            <div class="pride-img"><img src="../img/pride2.jpg" alt="提供のこだわり"></div>
+        </section>
+        <section class="pride-content">
+            <div class="pride-message">
+                <h2><span>03</span>コーヒーを提案</h2>
+                <p>「コクがあるもの」「爽やかなもの」
+                    「苦くないもの」
+                    といった要望にお答えします。
+                    お気軽にお尋ねください</p>
+            </div>
+            <div class="pride-img"><img src="../img/pride3.jpg" alt="ソムリエのこだわり"></div>
+        </section>
+    </article>
+    <div class="sns-area">
+        <ul class="snsbtniti">
+            <li><a href="#" class="flowbtn10"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="flowbtn10"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" class="flowbtn10"><i class="fab fa-facebook"></i></a>
+        </ul>
+    </div>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="cafe.html">CAFE</a></li>
+            </ul>
+        </nav>
+        <div>
+            <small>Copyright ©︎ 2021 Cup of Coffee All rights reserved</small>
+        </div>
+    </footer>
+</body>
+
+</html>
